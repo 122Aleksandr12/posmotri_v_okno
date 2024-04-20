@@ -44,6 +44,7 @@ ol {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: end;
+  inline-size: 1140px;
   gap: 30px;
 }
 
@@ -127,6 +128,7 @@ ol {
   inline-size: 225px;
   padding: 2px 0;
   appearance: none;
+  outline: none;
 }
 
 .search-form__checkbox-list {
@@ -168,7 +170,6 @@ ol {
 .content__details {
   inline-size: 100%;
   block-size: 100%;
-  overflow: hidden;
 }
 
 .title {
@@ -188,7 +189,6 @@ ol {
 .content__list {
   display: flex;
   flex-direction: column;
-  gap: 30px;
   block-size: 298px;
   overflow: auto;
   position: relative;
@@ -296,6 +296,6 @@ button:focus-visible {
   outline-offset: 1px;
 }
 
-.input:focus{
-  outline: none;
+.content__list-item:not(:last-child){
+  margin-bottom: 30px;
 }
